@@ -1,4 +1,3 @@
-
 ```python
 import numpy as np 
 import pandas as pd 
@@ -227,7 +226,7 @@ sb.pairplot(df, hue='target', vars = ['mean radius', 'mean texture', 'mean perim
 
 
 
-![png](output_5_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_5_1.png)
 
 
 
@@ -244,7 +243,7 @@ sb.heatmap(df.corr(), annot=True)
 
 
 
-![png](output_6_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_6_1.png)
 
 
 
@@ -309,7 +308,7 @@ sb.heatmap(cm, annot=True)
 
 
 
-![png](output_14_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_14_1.png)
 
 
 
@@ -377,7 +376,7 @@ sb.heatmap(cm, annot=True, fmt="d")
 
 
 
-![png](output_21_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_21_1.png)
 
 
 
