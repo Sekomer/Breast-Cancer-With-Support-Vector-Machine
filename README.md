@@ -45,7 +45,7 @@ df.tail()
 
 
 <div>
-  
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -209,12 +209,12 @@ sb.pairplot(df, hue='target', vars = ['mean radius', 'mean texture', 'mean perim
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x14ac8759a30>
+    <seaborn.axisgrid.PairGrid at 0x1eba5bb1040>
 
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_5_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_5_1.png)
 
 
 
@@ -226,12 +226,12 @@ sb.heatmap(df.corr(), annot=True)
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x14acb775e50>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1eba8074580>
 
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_6_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_6_1.png)
 
 
 
@@ -258,15 +258,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 
 ```python
-sc = MinMaxScaler() # minmax performs better than >> StandardScalar(copy=True, with_mean=True, with_std=True)
-sc.fit(X_train)
-X_train_scaled= sc.transform(X_train)
-X_test_scaled= sc.transform(X_test)
+
 ```
 
 
 ```python
-model.fit(X_train_scaled, y_train)
+model.fit(X_train, y_train)
 ```
 
 
@@ -278,7 +275,7 @@ model.fit(X_train_scaled, y_train)
 
 
 ```python
-y_pred = model.predict(X_test_scaled)
+y_pred = model.predict(X_test)
 cm = confusion_matrix(y_pred, y_test)
 ```
 
@@ -291,12 +288,12 @@ sb.heatmap(cm, annot=True)
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x14acc50e280>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1eba993a790>
 
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_14_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_14_1.png)
 
 
 
@@ -307,10 +304,23 @@ cm
 
 
 
-    array([[ 61,   1],
-           [  2, 107]], dtype=int64)
+    array([[ 52,   0],
+           [ 11, 108]], dtype=int64)
 
 
+
+
+```python
+# difference of scaling and grid search #
+```
+
+
+```python
+sc = MinMaxScaler() # minmax performs better than >> StandardScalar(copy=True, with_mean=True, with_std=True)
+sc.fit(X_train)
+X_train_scaled= sc.transform(X_train)
+X_test_scaled= sc.transform(X_test)
+```
 
 
 ```python
@@ -359,12 +369,12 @@ sb.heatmap(cm, annot=True, fmt="d")
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x14acc56c0a0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1eba9994e50>
 
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_21_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_23_1.png)
 
 
 
