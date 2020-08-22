@@ -400,7 +400,14 @@ classification_report(y_test, y_pred)
 
 
 
-    '              precision    recall  f1-score   support\n\n         0.0       1.00      0.97      0.98        63\n         1.0       0.98      1.00      0.99       108\n\n    accuracy                           0.99       171\n   macro avg       0.99      0.98      0.99       171\nweighted avg       0.99      0.99      0.99       171\n'
+    '                precision   recall   f1-score   support
+             0.0       1.00      0.97      0.98        63
+             1.0       0.98      1.00      0.99       108
+             
+        accuracy                           0.99       171               
+        macro avg       0.99      0.98     0.99       171
+        weighted avg    0.99      0.99     0.99       171
+             '
 
 
 
