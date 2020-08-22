@@ -231,7 +231,7 @@ sb.heatmap(df.corr(), annot=True)
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_6_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_6_1.png)
 
 
 
@@ -293,7 +293,7 @@ sb.heatmap(cm, annot=True)
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_14_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_14_1.png)
 
 
 
@@ -374,7 +374,7 @@ sb.heatmap(cm, annot=True, fmt="d")
 
 
 
-![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/tree/master/photos/output_23_1.png)
+![png](https://github.com/Sekomer/Breast-Cancer-With-Support-Vector-Machine/blob/master/photos/output_21_1.png)
 
 
 
