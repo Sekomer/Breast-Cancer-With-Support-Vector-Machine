@@ -26,7 +26,7 @@ raw.keys()
 
 
 
-    dict_keys(['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names', 'filename'])
+    >>>dict_keys(['data', 'target', 'frame', 'target_names', 'DESCR', 'feature_names', 'filename'])
 
 
 
@@ -269,7 +269,7 @@ model.fit(X_train, y_train)
 
 
 
-    SVC()
+    >>>SVC()
 
 
 
@@ -304,7 +304,7 @@ cm
 
 
 
-    array([[ 52,   0],
+    >>>array([[ 52,   0],
            [ 11, 108]], dtype=int64)
 
 
@@ -346,7 +346,7 @@ grid.best_params_
 
 
 
-    {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
+    >>>{'C': 10, 'gamma': 0.1, 'kernel': 'rbf'}
 
 
 
@@ -385,7 +385,7 @@ cm
 
 
 
-    array([[ 61,   0],
+    >>>array([[ 61,   0],
            [  2, 108]], dtype=int64)
 
 
