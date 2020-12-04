@@ -1,4 +1,4 @@
-# My SVM implementation for Breast Cancer dataset
+# My SVM implementation for the Breast Cancer dataset for educational purposes
 
 ```python
 import numpy as np 
